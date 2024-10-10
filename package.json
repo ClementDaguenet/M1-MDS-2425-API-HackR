@@ -1,0 +1,16 @@
+{
+  "name": "m1-mds-2425-api-hackr",
+  "version": "1.0.0",
+  "description": "- Outil de vérification d'existence d'adresse mail\r - Spammer de mail (contenu + nombre d'envoi)\r - Service de phising (création d'une page web de phishing sur mesure - backé sur de l'IA !)\r - Est-ce que le MDP est sur la liste des plus courants (https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt)\r - Récupérer tous domaines & sous-domaines associés à un Nom De Domaine\r - DDoS\r - Changement d'image random\r - Génération d'identité fictive\r - Crawler d'information sur une personne (à partir d'un nom / prénom)\r - Générateur de mot de passe sécurisé",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "express-router": "^0.0.1"
+  }
+}
