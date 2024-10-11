@@ -2,16 +2,16 @@
 
 ## Fonctionnalités
 
-- **Outil de vérification d'existence d'adresse mail**
-- **Spammer de mail (contenu + nombre d'envoi)**
+- *Outil de vérification d'existence d'adresse mail*
+- *Spammer de mail (contenu + nombre d'envoi)*
 - Service de phising (création d'une page web de phishing sur mesure - backé sur de l'IA !)
-- **Est-ce que le MDP est sur la liste des plus courants (https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt)**
+- *Est-ce que le MDP est sur la liste des plus courants (https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt)*
 - Récupérer tous domaines & sous-domaines associés à un Nom De Domaine (Adrien, on appelle ça aussi un "NDD" dans le milieu 😁)
 - DDoS
 - Changement d'image random (trouver une API qui fait ça ^^)
 - Génération d'identité fictive
 - Crawler d'information sur une personne (à partir d'un nom / prénom)
-- **Générateur de mot de passe sécurisé**
+- *Générateur de mot de passe sécurisé*
 
 ## Obligations
 
