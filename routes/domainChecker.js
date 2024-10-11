@@ -1,35 +1,38 @@
 const express = require("express");
 const router = express.Router();
-const axios = require("axios");
 const localStorage = require("localStorage");
+const axios = require("axios");
 
 const sqlite3 = require("sqlite3").verbose();
 const db = new sqlite3.Database("hackr.db");
 
-const hunterApiKey = "d97b5653697578e7e09aa204baa47288e3e7d761";
-
-router.get("/check-email", async (req, res) => {
+router.get("/check-domain", async (req, res) => {
   if (
     localStorage.getItem("userRole") === "admin" ||
-    localStorage.getItem("userRole") === "secretariat"
+    localStorage.getItem("userRole") === "hacker"
   ) {
     try {
-      const response = await axios.get(
-        `https://api.hunter.io/v2/email-verifier?email=${req.query.email}&api_key=${hunterApiKey}`
-      );
-      const status = response.data.data.status;
-      let output = "";
-      if (status === "valid" || status === "accept_all") {
-        output = "L'adresse mail existe";
-      } else {
-        output = "L'adresse mail n'existe pas";
-      }
-      res.send(output);
+      const options = {
+        method: "GET",
+        url: `https://api.securitytrails.com/v1/domain/${req.query.domain}/subdomains?children_only=false&include_inactive=true`,
+        headers: {
+          accept: "application/json",
+          APIKEY: "99UWTpY-x113htf_FRLfJ-WcwIRgxk8s",
+        },
+      };
+      const subdomainList = {subdomains : []};
+      await axios.request(options).then(function (response) {
+        const subdomains = response.data.subdomains;
+        subdomains.forEach((subdomain) => {
+          subdomainList.subdomains.push(subdomain);
+        });
+      });
+      res.json(subdomainList);
       const now = new Date();
       db.run(`
         INSERT INTO logs (user, action, date) VALUES
           ('${localStorage.getItem("username")}',
-          'check-email : ${req.query.email}',
+          'check-domain : ${req.query.domain}',
           '${now.toLocaleDateString("fr-FR", {
             weekday: "long",
             year: "numeric",
@@ -44,7 +47,7 @@ router.get("/check-email", async (req, res) => {
       console.error(error);
       res
         .status(500)
-        .json({ message: "Erreur lors de la vérification de l'email" });
+        .json({ message: "Erreur lors de la recherche du nom de domaine" });
     }
   } else {
     res.send("Vous n'êtes pas autorisé à utiliser cette fonctionnalité !");

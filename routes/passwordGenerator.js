@@ -1,35 +1,27 @@
 const express = require("express");
 const router = express.Router();
-const axios = require("axios");
 const localStorage = require("localStorage");
+const axios = require('axios');
 
 const sqlite3 = require("sqlite3").verbose();
 const db = new sqlite3.Database("hackr.db");
 
-const hunterApiKey = "d97b5653697578e7e09aa204baa47288e3e7d761";
-
-router.get("/check-email", async (req, res) => {
+router.get("/generate-password", async (req, res) => {
   if (
     localStorage.getItem("userRole") === "admin" ||
-    localStorage.getItem("userRole") === "secretariat"
+    localStorage.getItem("userRole") === "dev" ||
+    localStorage.getItem("userRole") === "hacker"
   ) {
     try {
       const response = await axios.get(
-        `https://api.hunter.io/v2/email-verifier?email=${req.query.email}&api_key=${hunterApiKey}`
+        "https://www.random.org/strings/?num=1&len=15&digits=on&upperalpha=on&loweralpha=on&unique=on&format=plain"
       );
-      const status = response.data.data.status;
-      let output = "";
-      if (status === "valid" || status === "accept_all") {
-        output = "L'adresse mail existe";
-      } else {
-        output = "L'adresse mail n'existe pas";
-      }
-      res.send(output);
+      res.json(`Mot de passe sécurisé généré : ${response.data.replace("\n","")}`);
       const now = new Date();
       db.run(`
         INSERT INTO logs (user, action, date) VALUES
           ('${localStorage.getItem("username")}',
-          'check-email : ${req.query.email}',
+          'generate-password : ${response.data.replace("\n","")}',
           '${now.toLocaleDateString("fr-FR", {
             weekday: "long",
             year: "numeric",
@@ -44,7 +36,7 @@ router.get("/check-email", async (req, res) => {
       console.error(error);
       res
         .status(500)
-        .json({ message: "Erreur lors de la vérification de l'email" });
+        .json({ message: "Erreur lors de la génération du mot de passe" });
     }
   } else {
     res.send("Vous n'êtes pas autorisé à utiliser cette fonctionnalité !");
