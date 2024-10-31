@@ -100,6 +100,9 @@ app.use("/", authenticateToken, identityGeneratorRouter);
 const domainCheckerRouter = require("./routes/domainChecker");
 app.use("/", authenticateToken, domainCheckerRouter);
 
+const ddosRouter = require("./routes/ddos");
+app.use("/", authenticateToken, ddosRouter);
+
 app.listen(port, () => {
   console.log(`Serveur en écoute sur le port ${port}`);
 });
