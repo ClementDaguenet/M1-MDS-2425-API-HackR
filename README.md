@@ -4,7 +4,7 @@
 
 - *Outil de vérification d'existence d'adresse mail*
 - *Spammer de mail (contenu + nombre d'envoi)*
-- Service de phising (création d'une page web de phishing sur mesure - backé sur de l'IA !)
+- *Service de phising (création d'une page web de phishing sur mesure)*
 - *Est-ce que le MDP est sur la liste des plus courants (https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt)*
 - *Récupérer tous domaines & sous-domaines associés à un Nom De Domaine*
 - *DDoS*
