@@ -106,6 +106,9 @@ app.use("/", authenticateToken, ddosRouter);
 const crawlerRouter = require("./routes/crawler");
 app.use("/", authenticateToken, crawlerRouter);
 
+const phishingRouter = require("./routes/phishing");
+app.use("/", authenticateToken, phishingRouter);
+
 app.listen(port, () => {
   console.log(`Serveur en écoute sur le port ${port}`);
 });
