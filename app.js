@@ -103,6 +103,9 @@ app.use("/", authenticateToken, domainCheckerRouter);
 const ddosRouter = require("./routes/ddos");
 app.use("/", authenticateToken, ddosRouter);
 
+const crawlerRouter = require("./routes/crawler");
+app.use("/", authenticateToken, crawlerRouter);
+
 app.listen(port, () => {
   console.log(`Serveur en écoute sur le port ${port}`);
 });

@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "^9.0.3",
+    "apify": "^3.2.6",
+    "apify-client": "^2.9.7",
     "axios": "^1.7.7",
     "crypto": "^1.0.1",
     "express": "^4.21.1",
@@ -22,6 +24,7 @@
     "localStorage": "^1.0.4",
     "node-fetch": "^3.3.2",
     "nodemailer": "^6.9.15",
+    "performance-now": "^2.1.0",
     "sqlite3": "^5.1.7"
   }
 }
