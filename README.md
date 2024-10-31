@@ -7,10 +7,10 @@
 - Service de phising (création d'une page web de phishing sur mesure - backé sur de l'IA !)
 - *Est-ce que le MDP est sur la liste des plus courants (https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt)*
 - *Récupérer tous domaines & sous-domaines associés à un Nom De Domaine*
-- DDoS
+- *DDoS*
 - Changement d'image random (trouver une API qui fait ça ^^)
 - *Génération d'identité fictive*
-- Crawler d'information sur une personne (à partir d'un nom / prénom)
+- *Crawler d'information sur une personne (à partir d'un username)*
 - *Générateur de mot de passe sécurisé*
 
 ## Obligations
