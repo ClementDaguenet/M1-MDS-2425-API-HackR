@@ -29,7 +29,6 @@ cd M1-MDS-2425-API-HackR
 ```
 npm install
 npm start
-node app.js
 ```
 
 - Si `npm start` ne lance pas automatiquement l'application, utilisez  :
@@ -37,7 +36,7 @@ node app.js
 node app.js
 ```
 
-- Pour utiliser les requêtes avec Postman, se connecter sur [le site](https://web.postman.co) et importer la collection présente dans le fichier *HackR.postman_collection.json* sur le [Github](https://github.com/ClementDaguenet/M1-MDS-2425-API-HackR.git).
+- Pour utiliser les requêtes avec Postman, se connecter sur [le site](https://web.postman.co) et importer la collection présente dans le fichier `HackR.postman_collection.json` sur le [Github](https://github.com/ClementDaguenet/M1-MDS-2425-API-HackR.git).
 
 - Tester les fonctionnalités décrites avec les **exemples** ci-dessous.
 
