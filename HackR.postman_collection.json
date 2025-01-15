@@ -1,0 +1,1011 @@
+{
+	"info": {
+		"_postman_id": "f1f24776-272a-43a1-b84c-613c468fbe53",
+		"name": "HackR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29961402"
+	},
+	"item": [
+		{
+			"name": "crawler",
+			"item": [
+				{
+					"name": "instagram",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/crawler?account=hugodecrypte&site=instagram",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"crawler"
+							],
+							"query": [
+								{
+									"key": "account",
+									"value": "hugodecrypte"
+								},
+								{
+									"key": "site",
+									"value": "instagram"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "youtube",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/crawler?account=hugodecrypte&site=youtube",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"crawler"
+							],
+							"query": [
+								{
+									"key": "account",
+									"value": "hugodecrypte"
+								},
+								{
+									"key": "site",
+									"value": "youtube"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tiktok",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/crawler?account=hugodecrypte&site=tiktok",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"crawler"
+							],
+							"query": [
+								{
+									"key": "account",
+									"value": "hugodecrypte"
+								},
+								{
+									"key": "site",
+									"value": "tiktok"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ddos",
+			"item": [
+				{
+					"name": "ddos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/ddos?url=https://www.google.com&times=100",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"ddos"
+							],
+							"query": [
+								{
+									"key": "url",
+									"value": "https://www.google.com"
+								},
+								{
+									"key": "times",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "domainChecker",
+			"item": [
+				{
+					"name": "valid",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-domain?domain=mds-project.fr",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-domain"
+							],
+							"query": [
+								{
+									"key": "domain",
+									"value": "mds-project.fr"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invalid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-domain?domain=aaazzz.fr",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-domain"
+							],
+							"query": [
+								{
+									"key": "domain",
+									"value": "aaazzz.fr"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "identity",
+			"item": [
+				{
+					"name": "generate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/generate-identity",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"generate-identity"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "admin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/login?username=archibald@gmail.com&password=password123",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "archibald@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "password123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "secretariat",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/login?username=geraldine@gmail.com&password=mot_de_passe",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "geraldine@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "mot_de_passe"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dev",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/login?username=kevin@gmail.com&password=kevinlebg",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "kevin@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "kevinlebg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hacker",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/login?username=jean-titouan@gmail.com&password=$ùp€r_môt_d€_pà$$€",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "jean-titouan@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "$ùp€r_môt_d€_pà$$€"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "logs",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-logs",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-logs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clear",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/clear-logs",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"clear-logs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userGeraldine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-logs/users?user=geraldine",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-logs",
+								"users"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "geraldine"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userKevin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-logs/users?user=kevin",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-logs",
+								"users"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "kevin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userJeanTitouan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-logs/users?user=jean-titouan",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-logs",
+								"users"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "jean-titouan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userArchibald",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-logs/users?user=archibald",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-logs",
+								"users"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "archibald"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actMailChecker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-logs/users?action=check-mail",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-logs",
+								"users"
+							],
+							"query": [
+								{
+									"key": "action",
+									"value": "check-mail"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actPasswordChecker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-logs/users?action=check-password",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-logs",
+								"users"
+							],
+							"query": [
+								{
+									"key": "action",
+									"value": "check-password"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actLogsChecker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-logs",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-logs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actLogsClearer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/clear-logs",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"clear-logs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actMailSpammer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-logs/users?action=send-mail",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-logs",
+								"users"
+							],
+							"query": [
+								{
+									"key": "action",
+									"value": "send-mail"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mailChecker",
+			"item": [
+				{
+					"name": "valid",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-email?email=patrick@stripe.com",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-email"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "patrick@stripe.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "invalid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-email?email=aaa@bbb.com",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-email"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "aaa@bbb.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mailSpammer",
+			"item": [
+				{
+					"name": "oneTime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/send-email?recipient=clement.dgt72@gmail.com&subject=Sujet très important&body=Message hyper urgent&times=1",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"send-email"
+							],
+							"query": [
+								{
+									"key": "recipient",
+									"value": "clement.dgt72@gmail.com"
+								},
+								{
+									"key": "subject",
+									"value": "Sujet très important"
+								},
+								{
+									"key": "body",
+									"value": "Message hyper urgent"
+								},
+								{
+									"key": "times",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "threeTimes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/send-email?recipient=clement.dgt72@gmail.com&subject=Sujet très important&body=Message hyper urgent&times=3",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"send-email"
+							],
+							"query": [
+								{
+									"key": "recipient",
+									"value": "clement.dgt72@gmail.com"
+								},
+								{
+									"key": "subject",
+									"value": "Sujet très important"
+								},
+								{
+									"key": "body",
+									"value": "Message hyper urgent"
+								},
+								{
+									"key": "times",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "passwordChecker",
+			"item": [
+				{
+					"name": "used",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-password?password=fuckme",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-password"
+							],
+							"query": [
+								{
+									"key": "password",
+									"value": "fuckme"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "unused",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/check-password?password=brgeviuuyre",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"check-password"
+							],
+							"query": [
+								{
+									"key": "password",
+									"value": "brgeviuuyre"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "passwordGenerator",
+			"item": [
+				{
+					"name": "generate",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/generate-password",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"generate-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "phishing",
+			"item": [
+				{
+					"name": "facebook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/phishing?url=https://www.facebook.com",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"phishing"
+							],
+							"query": [
+								{
+									"key": "url",
+									"value": "https://www.facebook.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "linkedin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/phishing?url=https://www.linkedin.com/login",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"phishing"
+							],
+							"query": [
+								{
+									"key": "url",
+									"value": "https://www.linkedin.com/login"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://clement.daguenet.angers.mds-project.fr/users",
+							"protocol": "https",
+							"host": [
+								"clement",
+								"daguenet",
+								"angers",
+								"mds-project",
+								"fr"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
