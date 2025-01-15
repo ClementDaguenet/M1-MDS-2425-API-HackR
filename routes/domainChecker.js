@@ -27,7 +27,7 @@ router.get("/check-domain", async (req, res) => {
           subdomainList.subdomains.push(subdomain);
         });
       });
-      res.json(subdomainList);
+      res.status(200).json(subdomainList);
       const now = new Date();
       db.run(`
         INSERT INTO logs (user, action, date) VALUES

@@ -22,11 +22,14 @@ router.post("/ddos", async (req, res) => {
         await axios.request(options);
       }
       const endTime = performanceNow();
-      res.json(
-        `DDoS sur ${req.query.url} effectué en ${
-          ((endTime - startTime) / 1000).toFixed(2)
-        } secondes avec ${req.query.times} requêtes`
-      );
+      res
+        .status(200)
+        .json(
+          `DDoS sur ${req.query.url} effectué en ${(
+            (endTime - startTime) /
+            1000
+          ).toFixed(2)} secondes avec ${req.query.times} requêtes`
+        );
       const now = new Date();
       db.run(`
         INSERT INTO logs (user, action, date) VALUES

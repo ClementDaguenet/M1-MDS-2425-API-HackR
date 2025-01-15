@@ -43,7 +43,7 @@ router.get("/check-password", async (req, res) => {
           found = true;
         }
       });
-      res.send(
+      res.status(200).send(
         found ? "Mot de passe beaucoup utilisé" : "Mot de passe peu utilisé"
       );
       const now = new Date();

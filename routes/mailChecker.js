@@ -24,7 +24,7 @@ router.get("/check-email", async (req, res) => {
       } else {
         output = "L'adresse mail n'existe pas";
       }
-      res.send(output);
+      res.status(200).send(output);
       const now = new Date();
       db.run(`
         INSERT INTO logs (user, action, date) VALUES

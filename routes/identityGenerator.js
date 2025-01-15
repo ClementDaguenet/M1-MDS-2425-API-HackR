@@ -27,7 +27,7 @@ router.get("/generate-identity", async (req, res) => {
         })} `;
       person += `est ${sex == "male" ? "un homme" : "une femme"} `;
       person += `que l'on peut contacter via ${faker.internet.email({ firstName, lastName })}`;
-      res.json(person);
+      res.status(200).json(person);
       const now = new Date();
       db.run(`
         INSERT INTO logs (user, action, date) VALUES

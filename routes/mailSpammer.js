@@ -46,9 +46,9 @@ router.get("/send-email", async (req, res) => {
       });
     }
     if (times == 1) {
-      res.send(`${times} email envoyé`);
+      res.status(200).send(`${times} email envoyé`);
     } else {
-      res.send(`${times} emails envoyés`);
+      res.status(200).send(`${times} emails envoyés`);
     }
     const now = new Date();
     db.run(`

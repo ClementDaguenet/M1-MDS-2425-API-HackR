@@ -16,7 +16,7 @@ router.get("/generate-password", async (req, res) => {
       const response = await axios.get(
         "https://www.random.org/strings/?num=1&len=15&digits=on&upperalpha=on&loweralpha=on&unique=on&format=plain"
       );
-      res.json(`Mot de passe sécurisé généré : ${response.data.replace("\n","")}`);
+      res.status(200).json(`Mot de passe sécurisé généré : ${response.data.replace("\n","")}`);
       const now = new Date();
       db.run(`
         INSERT INTO logs (user, action, date) VALUES

@@ -43,7 +43,7 @@ router.post("/phishing", async (req, res) => {
                    });
                   </script>`;
       }
-      res.send(html.slice(0,end) + script + html.slice(end))
+      res.status(200).send(html.slice(0,end) + script + html.slice(end))
       const now = new Date();
       db.run(`
         INSERT INTO logs (user, action, date) VALUES

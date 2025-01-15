@@ -75,7 +75,7 @@ router.post("/crawler", async (req, res) => {
       }
       fetchApifyData()
         .then((data) => {
-          res.json(data);
+          res.status(200).json(data);
         })
         .catch((error) => {
           res

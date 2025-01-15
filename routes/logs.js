@@ -14,7 +14,7 @@ router.get("/check-logs", async (req, res) => {
           console.error(err.message);
           return res.status(500).json({ message: "Erreur d'authentification" });
         }
-        res.json(logs);
+        res.status(200).json(logs);
       });
       const now = new Date();
       db.run(`
@@ -51,7 +51,7 @@ router.get("/check-logs/users", async (req, res) => {
           console.error(err.message);
           return res.status(500).json({ message: "Erreur d'authentification" });
         }
-        res.json(logs);
+        res.status(200).json(logs);
       });
       const now = new Date();
       db.run(`
@@ -88,7 +88,7 @@ router.get("/check-logs/actions", async (req, res) => {
           console.error(err.message);
           return res.status(500).json({ message: "Erreur d'authentification" });
         }
-        res.json(logs);
+        res.status(200).json(logs);
       });
       const now = new Date();
       db.run(`
@@ -126,7 +126,7 @@ router.get("/clear-logs", async (req, res) => {
           return res.status(500).json({ message: "Erreur d'authentification" });
         }
       });
-      res.json("Tous les logs ont été clear")
+      res.status(200).json("Tous les logs ont été clear")
     } catch (error) {
       console.error(error);
       res
