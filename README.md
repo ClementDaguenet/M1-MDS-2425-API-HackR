@@ -4,7 +4,7 @@ Ce projet est une API pour hacker développée dans le cadre de mon MBA Dévelop
 
 ## Prérequis et installation locale
 
-- Avoir les dernières versions de node, npm et git installées
+- Avoir les dernières versions de node, npm et git installées :
 ```
 sudo apt update
 sudo apt install git
@@ -12,20 +12,22 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
-- Clôner le dépôt git dans un répertoire de votre choix
+- Clôner le dépôt git dans un répertoire de votre choix :
 ```
 git clone https://github.com/ClementDaguenet/M1-MDS-2425-API-HackR.git
 cd M1-MDS-2425-API-HackR
 ```
 
-- Installer les dépendances et lancer l'API
+- Installer les dépendances et lancer l'API :
 ```
 npm install
 npm start
 node app.js
 ```
 
-- Tester les fonctionnalités décrites avec les **exemples** ci-dessous
+- Pour utiliser les requêtes avec Postman, se connecter sur [le site](https://web.postman.co) et importer la collection présente dans le fichier *HackR.postman_collection.json* sur le [Github](https://github.com/ClementDaguenet/M1-MDS-2425-API-HackR.git).
+
+- Tester les fonctionnalités décrites avec les **exemples** ci-dessous.
 
 ## Fonctionnalités
 
