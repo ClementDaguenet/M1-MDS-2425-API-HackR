@@ -4,12 +4,19 @@ Ce projet est une API pour hacker développée dans le cadre de mon MBA Dévelop
 
 ## Prérequis et installation locale
 
-- Avoir les dernières versions de node, npm et git installées :
+- Assurez-vous d'avoir les dernières versions de Node.js, npm et git installées :
 ```
 sudo apt update
 sudo apt install git
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install -y nodejs
+```
+
+- Vérifier les versions installées
+```
+node -v
+npm -v
+git -v
 ```
 
 - Clôner le dépôt git dans un répertoire de votre choix :
@@ -22,6 +29,11 @@ cd M1-MDS-2425-API-HackR
 ```
 npm install
 npm start
+node app.js
+```
+
+- Si `npm start` ne lance pas automatiquement l'application, utilisez  :
+```
 node app.js
 ```
 
