@@ -48,8 +48,6 @@ Hacker = Accède à tout sauf mail
 
 - Postman : Login - Admin : login/admin | Secrétariat : login/secretariat | Développeur : login/dev | Hacker : login/hacker
 
-- URL : Login - Admin : [login/admin](https://clement.daguenet.angers.mds-project.fr/login?username=archibald@gmail.com&password=password123) | Secrétariat : [login/secretariat](https://clement.daguenet.angers.mds-project.fr/login?username=geraldine@gmail.com&password=mot_de_passe) | Développeur : [login/dev](https://clement.daguenet.angers.mds-project.fr/login?username=kevin@gmail.com&password=kevinlebg) | Hacker : [login/hacker](https://clement.daguenet.angers.mds-project.fr/login?username=jean-titouan@gmail.com&password=$ùp€r_môt_d€_pà$€)
-
 ### Vérification mail
 
 - Postman : Mail existant = mailChecker/valid | Mail inexistant = mailChecker/invalid
@@ -69,8 +67,6 @@ Hacker = Accède à tout sauf mail
 ### Phishing
 
 - Postman : Facebook = phishing/facebook | LinkedIn = phishing/linkedin
-
-- URL : Fabebook = [phishing/facebook](https://clement.daguenet.angers.mds-project.fr/phishing?url=https://www.facebook.com) | LinkedIn = [phishing/linkedin](https://clement.daguenet.angers.mds-project.fr/phishing?url=https://www.linkedin.com/login)
 
 ### MDP courant ou non
 
@@ -92,8 +88,6 @@ Hacker = Accède à tout sauf mail
 
 - Postman : DDoS Google = ddos/ddos
 
-- URL : DDoS Google = [ddos/ddos](https://clement.daguenet.angers.mds-project.fr/ddos?url=https://www.google.com&times=1000)
-
 **Possibilité de changer le NDD et le nombre d'envois**
 
 ### Fake Identité
@@ -105,8 +99,6 @@ Hacker = Accède à tout sauf mail
 ### Crawler
 
 - Postman : Derniers posts Instagram de HugoDecrypte = crawler/instagram | Dernières vidéos Youtube de HugoDecrypte = crawler/youtube | Derniers posts TikTok de HugoDecrypte = crawler/tiktok
-
-- URL : Derniers posts Instagram de HugoDecrypte = [crawler/instagram](https://clement.daguenet.angers.mds-project.fr/crawler?account=hugodecrypte&site=instagram) | Dernières vidéos Youtube de HugoDecrypte = [crawler/youtube](https://clement.daguenet.angers.mds-project.fr/crawler?account=hugodecrypte&site=youtube) | Derniers posts TikTok de HugoDecrypte = [crawler/tiktok](https://clement.daguenet.angers.mds-project.fr/crawler?account=hugodecrypte&site=tiktok)
 
 **Possibilité de changer le compte à check**
 
